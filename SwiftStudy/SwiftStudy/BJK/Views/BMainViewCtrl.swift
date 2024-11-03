@@ -15,6 +15,7 @@ class BMainViewCtrl: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         bindViewModel()
+        study()
     }
     
     private func bindViewModel() {
@@ -22,6 +23,12 @@ class BMainViewCtrl: UIViewController {
             self?.navigationController?.popViewController(animated: true)
         }
     }
+    
+    // 스터디를 위한 간단한 함수
+    func study() {
+        print("study")
+    }
+    
     
     // 스토리보드에서 뒤로 가기 버튼에 연결
     @IBAction func backButtonTapped(_ sender: UIButton) {
