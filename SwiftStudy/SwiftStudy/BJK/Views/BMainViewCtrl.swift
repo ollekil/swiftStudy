@@ -10,6 +10,7 @@ import UIKit
 class BMainViewCtrl: UIViewController {
     
     let viewModel = CommemViewModel()
+    let bViewModel = BMainViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,8 @@ class BMainViewCtrl: UIViewController {
     // 스터디를 위한 간단한 함수
     func study() {
         print("study")
+        var str = "안녕하세요."
+        bViewModel.printMemoryAddress(of: &str)
     }
     
     
