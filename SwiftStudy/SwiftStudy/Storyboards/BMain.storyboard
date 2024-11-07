@@ -30,9 +30,22 @@
                                             <action selector="backButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="04F-4d-hNp"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCH-6Y-mN2">
+                                        <rect key="frame" x="147.66666666666666" y="362" width="97.666666666666657" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="zVL-7d-L8a"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="콤바인얼럿"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="136-Zg-Mnr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="aCH-6Y-mN2" firstAttribute="centerY" secondItem="hVA-I7-Lph" secondAttribute="centerY" id="8k9-Js-Gls"/>
+                                    <constraint firstItem="aCH-6Y-mN2" firstAttribute="centerX" secondItem="hVA-I7-Lph" secondAttribute="centerX" id="VLP-Un-aiy"/>
                                     <constraint firstItem="Gen-Wl-VLN" firstAttribute="leading" secondItem="hVA-I7-Lph" secondAttribute="leading" constant="20" id="l9X-xo-znk"/>
                                     <constraint firstItem="Gen-Wl-VLN" firstAttribute="top" secondItem="hVA-I7-Lph" secondAttribute="top" constant="20" id="m5H-vY-rUZ"/>
                                 </constraints>

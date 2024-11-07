@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Combine
 
 class BMainViewModel {
+    // 알림을 관찰하는 퍼블리셔 
+    var alertTrigger = PassthroughSubject<String, Never>()
     
     // 변수의 메모리 주소를 확인하는 함수
     // T -> 제네릭 타입 파라미터 (특정 타입에 국한되지 않고 여러 타입을 처리함)
@@ -17,5 +20,10 @@ class BMainViewModel {
         withUnsafePointer(to: &value) { pointer in
             print("Memory address of value: \(pointer)")
         }
+    }
+    
+    // 버튼을 눌렀을 때 알림 이벤트를 발행
+    func buttonTapped() {
+        alertTrigger.send("Combine Alert Show")
     }
 }
